@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assests/bootstrap/css/bootstrap.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light"style="background: #34495e" >
+    <div class="container-fluid">
+        <a class="navbar-brand fs-4 fst-italic text-light " href="#" >Point Of Sale System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent ">
+            <!--            "navbar-nav  mb-2 mb-lg-0  mx-2 "-->
+            <ul class="navbar-nav me-0  mb-lg-0 ms-auto ">
+                <li class="nav-item  fw-bold"  >
+                    <a class="nav-link active pe-2 fs-6 text-light" aria-current="page"  href="#">Home</a>
+                </li>
+                <li class="nav-item  fw-bold">
+                    <a class="nav-link active fs-6 text-light" aria-current="page" href="#">Products</a>
+                </li>
+                <li class="nav-item  fw-bold">
+                    <a class="nav-link active  fs-6" aria-current="page" href="#" style="color: #EA2027">Payments</a>
+                </li>
+
+                <li class="nav-item  fw-bold">
+                    <a class="nav-link active  fs-6 text-light" aria-current="page" href="#">Customers</a>
+                </li>
+
+                <li class="nav-item  fw-bold">
+                    <a class="nav-link active  fs-6 text-light" aria-current="page" href="#">Employees</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="d-flex flex-column mb-3 bg-body  position-fixed shadow mb-5 bg-body rounded" style="margin-top: 10vh; width: 75px; padding-top: 0">
+
+    <div class="border bd-highlight  p-0" style="height: 75px; ">
+        <a class="nav-link active fs-6   " style=" height: 75px" aria-current="page"  href="#">
+            <div class="shadow-sm p-3 mb-5 bg-body rounded" style="background-image: url('assests/icons/HomeDark.png'); height: 35px; width: 35px;  background-position: center; background-size: cover; position: absolute; top: 0;margin-top: 20px">
+            </div>
+        </a>
+
+    </div>
+    <div class="border  bd-highlight  p-0" style="height: 75px; ">
+        <a class="nav-link active fs-6 " style=" height: 75px" aria-current="page"  href="#">
+            <div  style="background-image: url('assests/icons/ItemsDark.png'); height: 35px; width: 35px;  background-position: center; background-size: cover; position: absolute; top: 0;margin-top: 90px">
+            </div>
+        </a>
+
+    </div>
+    <div class="border  bd-highlight  p-0" style="height: 75px;background: #34495e ">
+        <a class="nav-link active fs-6 " style=" height: 75px" aria-current="page"  href="#">
+            <div  style="background-image: url('assests/icons/PaymentsLight.png'); height: 35px; width: 35px;  background-position: center; background-size: cover; position: absolute; top: 0;margin-top: 165px">
+            </div>
+        </a>
+
+    </div>
+    <div class="border  bd-highlight  p-0" style="height: 75px; ">
+        <a class="nav-link active fs-6 " style=" height: 75px" aria-current="page"  href="#">
+            <div  style="background-image: url('assests/CustomerBlack.png'); height: 35px; width: 35px;  background-position: center; background-size: cover; position: absolute; top: 0; margin-top: 240px">
+            </div>
+        </a>
+
+    </div>
+    <div class="border   bd-highlight" style="height: 75px; width: 75px" >
+        <a class="nav-link active fs-6" style=" height: 75px" aria-current="page"  href="#">
+            <div  style="background-image: url('assests/icons/PayrollDarkns8-payroll-48.png '); height: 35px; width: 35px;  background-position: center; background-size: cover; position: absolute; top: 0;margin-top: 315px">
+            </div>
+        </a>
+
+    </div>
+</div>
+
+<div class="container-fluid mt-5 " >
+    <div class="row" >
+        <div class=" col-2  border border-2 shadow p-3 pt-1 mb-5  rounded border "  style="background: #ecf0f1; margin-left: 120px">
+            <form>
+                <div class="mb-3">
+                    <label for="Item" class="form-label fs-5 ms-2 mt-0 fw-bold" style="color: #34495e">|-- Order Form --|</label>
+                </div>
+                <div class="mb-3">
+                    <label for="Item" class="form-label">Item</label>
+                    <input type="text" class="form-control" id="Item" aria-describedby="ItemCode">
+                </div>
+                <div class="mb-3">
+                    <label for="CID" class="form-label">Customer ID</label>
+                    <input type="text" class="form-control" id="CID">
+                </div>
+                <div class="mb-3">
+                    <label for="quan" class="form-label">Quantity</label>
+                    <input type="text" class="form-control" id="quan">
+                </div>
+                <div class="mb-3">
+                    <label for="up" class="form-label">Unit Price</label>
+                    <input type="text" class="form-control" id="up">
+                </div>
+                <div class="mb-3">
+                    <label for="amo" class="form-label">Amount</label>
+                    <input type="text" class="form-control" id="amo">
+                </div>
+                <!--    <div class="mb-3 form-check">-->
+                <!--        <input type="checkbox" class="form-check-input" id="exampleCheck1">-->
+                <!--        <label class="form-check-label" for="exampleCheck1">Check me out</label>-->
+                <!--    </div>-->
+                <button type="submit" class="btn btn-primary bg-success border border-success">Save</button>
+                <button type="reset" class="btn btn-primary bg-danger border border-danger">Cancel</button>
+            </form>
+
+
+        </div>
+        <div class="col-8 ms-3 shadow p-3 mb-5 bg-body rounded" >
+            <table class="table table table-hover">
+                <thead >
+                <tr style="background: #57606f; color: #ecf0f1">
+                    <th scope="col">Item Code</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Unit Price</th>
+                    <th scope="col">Total</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>A</td>
+                    <td>2</td>
+                    <td>1500</td>
+                    <td>3000</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>B</td>
+                    <td>1</td>
+                    <td>100</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>C</td>
+                    <td>1</td>
+                    <td>100</td>
+                    <td>100</td>
+                </tr>
+                </tbody>
+            </table>
+
+             <table class="table table table-fixed">
+                 <tbody>
+                 <tr>
+                     <th scope="row"> <span class="d-inline-block fs-6 fw-bold">Total :-</span></th>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td>  <span class=" fs-6 fw-bold ">  3200</span></td>
+
+
+                 </tr>
+                 <tr>
+                     <th scope="row"> <span class=" fs-6 fw-bold">Discount :-</span></th>
+                     <td style="width: 300px"></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td > <span class="d-inline-block fs-6 fw-bold ">  100</span></td>
+
+                 </tr>
+                 <tr>
+                     <th scope="row"> <span class=" fs-6 fw-bold">Amount :-</span></th>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td><span class="d-inline-block fs-6 fw-bold">  3100</span></td>
+
+                 </tr>
+                 <tr>
+                     <th scope="row">
+                         <span class=" fs-6 fw-bold">Payment :-</span></th>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td>
+                         <span class="d-inline-block  ">
+                         <div class="form-floating mb-0 w-50 ">
+                              <input type="text" class="form-control align-content-center fw-bold fs-5" style="height: 10px" id="floatingInput" placeholder="Enter Paid Amount">
+                              <label for="floatingInput"></label>
+                         </div>
+                    </span></td>
+
+                 </tr>
+                 <tr>
+                     <th scope="row"> <span class=" fs-6 fw-bold">Balance :-</span></th>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td><span class="d-inline-block fs-6 fw-bold">  00</span></td>
+
+                 </tr>
+                 </tbody>
+             </table>
+
+            <button type="submit" style=" float:right; height: 50px; width: 150px " class="btn btn-primary align-content-end bg-success  fs-5 fw-bold border border-0 mt-2 me-5">Place Order</button>
+
+        </div>
+
+    </div>
+</div>
+
+<link rel="stylesheet" href="assests/bootstrap/js/bootstrap.js">
+</body>
+</html>
